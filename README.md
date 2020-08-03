@@ -12,7 +12,7 @@ Raspberry Pi compatible Docker Image with a minimal `Busybox httpd` web server.
 
 ## Start the default web server
 ```bash
-docker run -d -p 80:80 mrperrins/rpi-bagelism-httpd
+docker run -d -p 80:80 mrperrins/bagelism-hq
 ```
 Or use the script `start-webservers.sh count [start]` to start many web servers, port number uses 10000+n
 ```bash
