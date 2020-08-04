@@ -10,7 +10,7 @@ build:
 		--add-file bagels.jpg /www/ \
 		--entry '/bin/busybox' \
 		--cmd 'httpd -f -p 80 -h /www' \
-		/bin/bagelism
+		/bin/busybox
 	docker tag -f $(DOCKER_IMAGE_NAME) $(DOCKER_IMAGE_NAME):latest
 	docker build -t mrperrins/bagelism-hq .
 	docker tag -f $(DOCKER_IMAGE_NAME) $(DOCKER_IMAGE_NAME):latest
